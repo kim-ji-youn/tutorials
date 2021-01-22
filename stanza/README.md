@@ -5,7 +5,7 @@ Visit the homepage for for more information!
 
 [Stanza]: https://stanfordnlp.github.io/stanza/
 
-###### How to install? --> [click]
+#### How to install? --> [click]
 * python IDLE
 * Anaconde
 * Google Colab
@@ -14,6 +14,6 @@ Visit the homepage for for more information!
 
 
 
-###### How to use? --> [click]
+#### How to use? --> [click]
 
 [click]: https://github.com/kim-ji-youn/tutorials/blob/main/stanza/stanza_tutorial.ipynb
