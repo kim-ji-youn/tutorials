@@ -8,6 +8,7 @@ Tutorials about what I know
 
 * how to install? --> [click]
 [click]: https://github.com/kim-ji-youn/tutorials/blob/main/stanza/Stanza.pdf
+
 * how to use? --> [click]
 [click]: https://github.com/kim-ji-youn/tutorials/blob/main/stanza/stanza_tutorial.ipynb
 
