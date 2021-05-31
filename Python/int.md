@@ -32,7 +32,7 @@ answer = int(num, base)
 ```
 
 **정리**
-* int(x, base) : base 진법으로 변환
+* **int(x, base)** : base 진법으로 변환
   * argument: x = string 타입, base = 진수
   * return value : x를 base 진수로 바꾼 것, 기본은 10진수
   ```
@@ -42,7 +42,7 @@ answer = int(num, base)
   5
   ```
 
-* enumerate: 인덱스(index)와 값(value)를 함께 사용할 때 사용된다!
+* **enumerate**: 인덱스(index)와 값(value)를 함께 사용할 때 사용된다!
   ```
   >>>numbers = ['one', 'two', 'three']
   >>>for idx, value in enumerate(numbers) :
@@ -51,7 +51,7 @@ answer = int(num, base)
   2 two
   3 three
   ```
-* string\[::-1\] : string을 reverse한 결과값이다!
+* **string\[::-1\]** : string을 reverse한 결과값이다!
   ```
   >>>string = "hello"
   >>>print(string[::-1])
