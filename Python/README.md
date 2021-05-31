@@ -24,7 +24,7 @@ def solution(mylist) :
 #### 2. 정수 다루기
 ##### 2-1. 몫과 나머지: [divmod]
   * \*: unpacking
-  * divmod 함수
+  * divmod(x, y)
 ##### 2-2. n진법 -> 10진법: [int]
   * string\[::-1\]
   * enumerate
