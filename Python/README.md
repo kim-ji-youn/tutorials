@@ -57,6 +57,10 @@ return value: (몫, 나머지)
 (13.0, 0.10000000000000014)
 ```
 
-divmod(a, b)의 값을 unpacking 하여 print : print(*divmod(a, b)) --> 몫과 나머지가 띄어쓰기로 구분되어 print
+divmod(a, b)의 값을 unpacking 하여 print
+```
+print(*divmod(a, b)) 
+```
+--> 몫과 나머지가 띄어쓰기로 구분되어 print
 
 
