@@ -21,7 +21,7 @@ def solution(mylist) :
 ```
 
 
-#### 2. 정수
+#### 2. 정수 다루기
 ##### 2-1. 몫과 나머지: divmod
 ```
 >>> divmod(x, y)
@@ -62,5 +62,8 @@ divmod(a, b)의 값을 unpacking 하여 print
 print(*divmod(a, b)) 
 ```
 --> 몫과 나머지가 띄어쓰기로 구분되어 print
+
+#### 2-2. n진법 -> 10진법: int 함수
+
 
 
