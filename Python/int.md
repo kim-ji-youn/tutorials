@@ -22,8 +22,21 @@ answer = 0
 for idx, number in enumerate(num[::-1]) :
   answer += int(number) * (base ** idx)
 ```
-* enumerate
-* num\[::-1\]
+* enumerate: 인덱스(index)와 값(value)를 함께 사용할 때 사용된다!
+  ```
+  >>>numbers = ['one', 'two', 'three']
+  >>>for idx, value in enumerate(numbers) :
+  >>>   print(index+1, name)
+  1 one
+  2 two
+  3 three
+  ```
+* string\[::-1\] : string을 reverse한 결과값이다!
+  ```
+  >>>string = "hello"
+  >>>print(string[::-1])
+  olleh
+  ```
 
 파이썬다운 코드
 ```
