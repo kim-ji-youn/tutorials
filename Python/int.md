@@ -22,6 +22,26 @@ answer = 0
 for idx, number in enumerate(num[::-1]) :
   answer += int(number) * (base ** idx)
 ```
+
+
+파이썬다운 코드
+```
+num = '3212'
+base = 5
+answer = int(num, base)
+```
+
+**정리**
+* int(x, base) : base 진법으로 변환
+  * argument: x = string 타입, base = 진수
+  * return value : x를 base 진수로 바꾼 것, 기본은 10진수
+  ```
+  >>>num = '12'
+  >>>base = 3
+  >>>print(int(num, base))
+  5
+  ```
+
 * enumerate: 인덱스(index)와 값(value)를 함께 사용할 때 사용된다!
   ```
   >>>numbers = ['one', 'two', 'three']
@@ -37,14 +57,3 @@ for idx, number in enumerate(num[::-1]) :
   >>>print(string[::-1])
   olleh
   ```
-
-파이썬다운 코드
-```
-num = '3212'
-base = 5
-answer = int(num, base)
-```
-* int(x, base) : base 진법으로 변환
-    * argument: x = string 타입, base = 진수
-    * return value : x를 base 진수로 바꾼 것, 기본은 10진수
-
