@@ -39,7 +39,7 @@ def solution(mylist) :
 * center(width, \[filler\]): width 크기로 가운데 정렬
 * rjust(width, \[filler\]): width 크기로 오른쪽 정렬
 
-##### 3-2. 알파벳 출력하기 : [import string]
+##### 3-2. 알파벳 출력하기 : [string 모듈]
 * string 모듈
     * string.ascii_lowercase: 소문자 출력
     * string.ascii_uppercase: 대문자 출력
@@ -48,5 +48,5 @@ def solution(mylist) :
 
 
 [ljust, center, rjust]: https://github.com/kim-ji-youn/tutorials/blob/main/Python/rjust_center_ljust.md
-[import string]: 
+[string 모듈]: https://github.com/kim-ji-youn/tutorials/blob/main/Python/string_module.md
 
