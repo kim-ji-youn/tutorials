@@ -32,6 +32,6 @@ s.rjust(n) #우측 정렬
 
 * **요약**
 * 좌측, 가운데, 우측 정렬은 for문 사용하지 말고 아래 함수를 쓰자!
-    * string.ljust(n, f) : 길이 n만큼 좌측 정렬, f는 filler(optional)
-    * string.center(n, f) :  길이 n만큼 가운데 정렬, f는 filler(optional)
-    * string.rjust(n, f): 길이 n만큼 우측 정렬, f는 filler(optional)
+    * string.ljust(n, f) : 길이 n만큼 좌측 정렬, f는 filler(optional) default는 space
+    * string.center(n, f) :  길이 n만큼 가운데 정렬, f는 filler(optional) default는 space
+    * string.rjust(n, f): 길이 n만큼 우측 정렬, f는 filler(optional) default는 space
