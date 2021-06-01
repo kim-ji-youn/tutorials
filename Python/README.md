@@ -51,8 +51,8 @@ def solution(mylist) :
 
 #### 4. Iterable 다루기
 ##### 4-1. 원본을 유지한채, 정렬된 리스트 구하기 : [sorted]
-* list1.sort() : list1의 순서가 바뀐다.  
-* list2 = sorted(list1) : list1을 유지한 채, 정렬시키는 것이 가능하다. 
+* list1.sort() : list1의 원소를 정렬
+* list2 = sorted(list1) : list1을 유지한 채, 다른 변수에 정렬된 리스트를 저장
 
 ##### 4-2. 2차원 리스트 뒤집기 : [zip]
 
