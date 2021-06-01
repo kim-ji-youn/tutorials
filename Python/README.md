@@ -32,3 +32,9 @@ def solution(mylist) :
 
 [divmod]: https://github.com/kim-ji-youn/tutorials/blob/main/Python/divmod.md
 [int]: https://github.com/kim-ji-youn/tutorials/blob/main/Python/int.md
+
+#### 3. 
+##### 3-1. 문자열 정렬하기 : [ljust, center, rjust]
+* ljust(width, \[filler\])
+* center(width, \[filler\])
+* rjust(width, \[filler\])
