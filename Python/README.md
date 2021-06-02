@@ -50,11 +50,20 @@ def solution(mylist) :
 [string 모듈]: https://github.com/kim-ji-youn/tutorials/blob/main/Python/string_module.md
 
 #### 4. Iterable 다루기
+Iterable : 자신의 멤버를 한번에 리턴할 수 있는 객체    
+ex) list, str, tuple, dictionary 등
 ##### 4-1. 원본을 유지한채, 정렬된 리스트 구하기 : [sorted]
 * list1.sort() : list1의 원소를 정렬
 * list2 = sorted(list1) : list1을 유지한 채, 다른 변수에 정렬된 리스트를 저장
 
 ##### 4-2. 2차원 리스트 뒤집기 : [zip]
+##### 4-3. i번째 원소와 i+1번째 원소 : [zip]
+##### 4-4. 모든 멤버의 type 변환하기 : [map]
+
+#### 5. Sequence Types 다루기
+Sequence Type: int 타입 인덱스를 통해 원소를 접근할 수 있는 iterable    
+ex) list, str, tuple
+##### 5-1. sequence 멤버를 하나로 이어붙이기: [join]
 
 
 
