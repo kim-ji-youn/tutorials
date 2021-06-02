@@ -67,5 +67,24 @@ zip(): Returns an iterator of tuples, where the i-th tuple contains the i-th ele
 
 
 
+* **문제**: 함수의 파라미터로 주어진 리스트에서 i번째 원소와 i+1번째 원소의 차를 담은 일차원 리스트에 차례로 담아 리턴
 
+내가 푼 방식. for문을 사용하였다. 
 ```
+def solution(mylist):
+    answer = []
+    for i in range(1, len(mylist)) :
+        answer.append(abs(mylist[i-1] - mylist[i]))
+    return answer
+```
+
+zip 함수를 사용할 수 있다. 
+```
+def solution(mylist)
+    answer = []
+    for num1, num2 in zip(mylist, mylist[1:]) :
+        answer.append(abs(num1 - num2))
+    return answer
+```
+
+* *zip함수에서 서로 길이가 다른 리스트가 인자로 들어오는 경우 길이가 짧은 쪽까지만 iteration이 이루어진다!
