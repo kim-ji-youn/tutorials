@@ -87,4 +87,4 @@ def solution(mylist)
     return answer
 ```
 
-* *zip함수에서 서로 길이가 다른 리스트가 인자로 들어오는 경우 길이가 짧은 쪽까지만 iteration이 이루어진다!
+* *zip함수에서 서로 길이가 다른 리스트가 인자로 들어오는 경우 길이가 짧은 쪽까지만 iteration이 이루어진다!*
