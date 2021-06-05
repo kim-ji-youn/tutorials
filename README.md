@@ -1,5 +1,5 @@
 # tutorials
-Tutorials about what I know
+About what I know and what I have learned
 
 ### [Stanza]
 [Stanza]: https://github.com/kim-ji-youn/tutorials/blob/main/stanza
@@ -16,3 +16,7 @@ a Python natural language analysis package made by Stanford NLP Group.
 
 * 문법정리 --> [click](https://github.com/kim-ji-youn/tutorials/tree/main/RegularExpression)
 * 예제 --> 
+
+
+### [Python]
+[Python]: https://github.com/kim-ji-youn/tutorials/tree/main/Python
