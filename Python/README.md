@@ -78,7 +78,7 @@ ex) list, str, tuple
 * itertools.product : 곱집합을 구해준다. 
 
 
-[product]: 
+[product]: https://github.com/kim-ji-youn/tutorials/blob/main/Python/product.md
 
 
 
