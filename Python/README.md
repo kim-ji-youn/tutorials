@@ -60,11 +60,25 @@ ex) list, str, tuple, dictionary 등
 ##### 4-3. i번째 원소와 i+1번째 원소 : [zip]
 ##### 4-4. 모든 멤버의 type 변환하기 : [map]
 
+
+[zip]:
+[map]:
+
 #### 5. Sequence Types 다루기
 Sequence Type: int 타입 인덱스를 통해 원소를 접근할 수 있는 iterable    
 ex) list, str, tuple
 ##### 5-1. sequence 멤버를 하나로 이어붙이기: [join]
+##### 5-2. sequence type의 * 연산 : [\*]
 
+[join]:
+[\*]: 
+
+#### 6. Itertools/Collections 모듈
+##### 6-1. 곱집합(Cartesian product) 구하기: [product]
+* itertools.product : 곱집합을 구해준다. 
+
+
+[product]: 
 
 
 
