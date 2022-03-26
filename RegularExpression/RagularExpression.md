@@ -78,3 +78,74 @@ m3 결과 :  ['L', 'f', ' ', 's', ' ', 's', 'h', 'r', 't', ',', ' ', 'r', 't', '
       * \[0-9\]: 숫자
       * \[a-z\]: 알파벳 소문자
       * \[A-Za-z\]: 알파벳
+
+* ```\d``` : 모든 숫자에 매칭되는 메타문자 ( = \[0-9\]
+* ```\D``` : 숫자가 아닌 문자에 매칭되는 메타문자(= \[^0-9\])
+* ```\w``` : 알파벳 대소문자, 숫자, 밑줄에 매칭되는 패턴 (= \[A-Za-z0-9\]
+* ```\W``` : 알파벳 대소문자, 숫자, 밑줄 이외의 문자에 매칭되는 패턴 (= \[^A-Za-z0-9\])
+* ```\t``` : 가로 탭 문자
+* ```\n``` : 개행 문자
+* ```\s``` : 세로 탭 문자
+* ```\f``` : 용지 넘김 문자
+* ```\r``` : 캐리지 리턴 문자
+* ```\s``` : 모든 공백과 매칭되는 패턴
+* ```\S``` : 공백 이외의 모든 문자들과 매칭되는 패턴
+* . : wildcard
+      * \[.\]: 대괄호 속에서는 문자 그대로 ```.```을 의미
+* (?i) : 패턴 내의 알파벳에서 대소문자를 무시하는 플래그
+      * 플래그의 위치와 상관없이 패턴 내에 포함되어 있다면, 해당 패턴은 대소문자를 무시
+```
+import re
+
+text = '''APPLE APPLe APPlE APpLE ApPLE aPPLE APPle APpLe ApPLe aPPLe APplE ApPlE aPPlE AppLE aPpLE apPLE'''
+          
+
+p1 = "APPLE"
+p2 = "(?i)apple"       # 대소문자를 무시하며 APPLE에 매칭되는 패턴을 작성해보세요.
+
+m1 = re.findall(p1, text)
+print("m1 결과 : ", m1)
+
+m2 = re.findall(p2, text)
+print("m2 결과 : ", m2)
+
+m1 결과 :  ['APPLE']
+m2 결과 :  ['APPLE', 'APPLe', 'APPlE', 'APpLE', 'ApPLE', 'aPPLE', 'APPle', 'APpLe', 'ApPLe', 'aPPLe', 'APplE', 'ApPlE', 'aPPlE', 'AppLE', 'aPpLE', 'apPLE']
+
+```
+## 수량자
+* ```*```: 바로 앞의 문자가 0번 이상 반복됨
+      * ```ca*t``` : ct, cat, caat, caaat, ....
+* ```+```: 바로 앞의 문자가 최소 1회 이상은 반복됨
+      * ```like[a-z]+```: likelihood, likely, like(x)
+* ```{n}```: n개의 문자가 있어야 검색
+      * ```\d{3}``` : 3자리 숫자에 매칭
+* ```{n,m}``` : n개 이상, m개 이하
+      * ```ca{3,5}t``` : caaat, caaaat, caaaaat
+* ```{n,}``` : n개 이상의 문자에 매칭
+      * ```co{2,}l``` : cool, coool, cooool, coooool, ...
+* ```?``` : {0, 1}
+      * ```dogs?``` : dog, dogs
+* 수량자는 일반적으로 **가장 긴 문자열**과 매칭되려는 특성을 가지고 있음
+* ```?``` 문자를 **수량자 뒤에 붙여** 수량자의 탐욕성을 제한할 수 있음
+```
+import re
+
+'''
+아래에 정규표현식을 직접 입력해보세요!
+'''
+
+text = "<html><head><Title>제목</head></html>"
+
+p1 = "<.*>"
+p2 = "<.*?>"         #정규표현식을 이용해보세요.
+
+m1 = re.findall(p1, text)
+m2 = re.findall(p2, text)
+
+print("m1 결과 : ", m1)
+print("m2 결과 : ", m2)
+
+m1 결과 :  ['<html><head><Title>제목</head></html>']
+m2 결과 :  ['<html>', '<head>', '<Title>', '</head>', '</html>']
+```
